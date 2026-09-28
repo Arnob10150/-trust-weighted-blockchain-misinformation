@@ -1,0 +1,224 @@
+{
+  "deploy_gas": 2284481,
+  "bond_curve": [
+    {
+      "reputation": 0,
+      "bounded": 1000,
+      "unbounded": 1000
+    },
+    {
+      "reputation": 1,
+      "bounded": 500,
+      "unbounded": 500
+    },
+    {
+      "reputation": 5,
+      "bounded": 333.3333333333333,
+      "unbounded": 166.66666666666666
+    },
+    {
+      "reputation": 10,
+      "bounded": 250,
+      "unbounded": 90.9090909090909
+    },
+    {
+      "reputation": 50,
+      "bounded": 166.66666666666666,
+      "unbounded": 19.607843137254903
+    },
+    {
+      "reputation": 100,
+      "bounded": 142.85714285714286,
+      "unbounded": 9.900990099009901
+    },
+    {
+      "reputation": 500,
+      "bounded": 111.11111111111111,
+      "unbounded": 1.996007984031936
+    },
+    {
+      "reputation": 1000,
+      "bounded": 100,
+      "unbounded": 0.999000999000999
+    },
+    {
+      "reputation": 5000,
+      "bounded": 76.92307692307692,
+      "unbounded": 0.19996000799840033
+    },
+    {
+      "reputation": 10000,
+      "bounded": 71.42857142857143,
+      "unbounded": 0.0999900009999
+    }
+  ],
+  "bond_by_tier": [
+    {
+      "reputation": 1,
+      "m1": 500,
+      "m2": 1000,
+      "m3": 1500
+    },
+    {
+      "reputation": 10,
+      "m1": 250,
+      "m2": 500,
+      "m3": 750
+    },
+    {
+      "reputation": 100,
+      "m1": 142.85714285714286,
+      "m2": 285.7142857142857,
+      "m3": 428.57142857142856
+    },
+    {
+      "reputation": 1000,
+      "m1": 100,
+      "m2": 200,
+      "m3": 300
+    }
+  ],
+  "bond_pub_eth": 100,
+  "gas": {
+    "mintContent": 169638,
+    "setReputation": 26454,
+    "slashStake": 88947
+  },
+  "batch": [
+    {
+      "n": 1,
+      "total": 108725,
+      "per_item": 108725,
+      "reduction_pct": 0
+    },
+    {
+      "n": 2,
+      "total": 177556,
+      "per_item": 88778,
+      "reduction_pct": 18.346286502644286
+    },
+    {
+      "n": 4,
+      "total": 315231,
+      "per_item": 78807.75,
+      "reduction_pct": 27.516440561048515
+    },
+    {
+      "n": 8,
+      "total": 590617,
+      "per_item": 73827.125,
+      "reduction_pct": 32.09737870774891
+    },
+    {
+      "n": 16,
+      "total": 1141608,
+      "per_item": 71350.5,
+      "reduction_pct": 34.37525868015636
+    },
+    {
+      "n": 32,
+      "total": 2243459,
+      "per_item": 70108.09375,
+      "reduction_pct": 35.517963899747066
+    }
+  ],
+  "sybil": {
+    "bond_before": 250,
+    "events": [
+      {
+        "mint": 1,
+        "required_eth": 250,
+        "sent_eth": 250,
+        "status": "accepted"
+      },
+      {
+        "mint": 2,
+        "required_eth": 250,
+        "sent_eth": 250,
+        "status": "accepted"
+      },
+      {
+        "mint": 3,
+        "required_eth": 250,
+        "sent_eth": 250,
+        "status": "accepted"
+      },
+      {
+        "mint": 4,
+        "required_eth": 250,
+        "sent_eth": 250,
+        "status": "accepted"
+      },
+      {
+        "mint": 5,
+        "required_eth": 250,
+        "sent_eth": 250,
+        "status": "accepted"
+      },
+      {
+        "mint": 6,
+        "required_eth": 750,
+        "sent_eth": 250,
+        "status": "reverted: bond too low"
+      }
+    ],
+    "riskMult_after": 3,
+    "bond_after": 750,
+    "probation_seconds": 2591999
+  },
+  "cost_to_corrupt": [
+    {
+      "identities": 1,
+      "normal_eth": 1000,
+      "probation_eth": 3000
+    },
+    {
+      "identities": 5,
+      "normal_eth": 5000,
+      "probation_eth": 15000
+    },
+    {
+      "identities": 10,
+      "normal_eth": 10000,
+      "probation_eth": 30000
+    },
+    {
+      "identities": 25,
+      "normal_eth": 25000,
+      "probation_eth": 75000
+    },
+    {
+      "identities": 50,
+      "normal_eth": 50000,
+      "probation_eth": 150000
+    },
+    {
+      "identities": 100,
+      "normal_eth": 100000,
+      "probation_eth": 300000
+    }
+  ],
+  "slashing": {
+    "pot_eth": 100,
+    "recipients": [
+      {
+        "verifier": "Verifier 1",
+        "received_eth": 33.333333333333336,
+        "share_pct": 33.33333333333333
+      },
+      {
+        "verifier": "Verifier 2",
+        "received_eth": 33.333333333333336,
+        "share_pct": 33.33333333333333
+      },
+      {
+        "verifier": "Verifier 3",
+        "received_eth": 33.333333333333336,
+        "share_pct": 33.33333333333333
+      }
+    ],
+    "publisher_reputation_after": 800
+  },
+  "gas_price_gwei": 50,
+  "eth_usd": 3000
+}

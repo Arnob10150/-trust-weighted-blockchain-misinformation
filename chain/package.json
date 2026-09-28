@@ -1,0 +1,10 @@
+{
+  "name": "trust-weighted-verification",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "hardhat": "^2.22.17",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6"
+  }
+}
